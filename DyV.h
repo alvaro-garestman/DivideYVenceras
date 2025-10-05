@@ -1,3 +1,5 @@
+#ifndef DYV_H
+#define DYV_H
 #include <vector>
 using namespace std;
 
@@ -39,8 +41,9 @@ template <typename T>
 int QuickSort (const vector <T>& v, int ini, int fin){
        if (ini < fin){
 		int pivot = Partition(v, ini, fin);
- 		QuickSort(V, ini, pivot -1)
-		QuickSort(V, pivot +1, fin)
+ 		QuickSort(v, ini, pivot -1)
+		QuickSort(v, pivot +1, fin)
+		}
 }
 
 template <typename T>
