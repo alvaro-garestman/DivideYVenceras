@@ -1,6 +1,3 @@
-#ifndef DYV_H
-#define DYV_H
-
 #include <vector>
 using namespace std;
 
@@ -37,6 +34,28 @@ int BusquedaBinaria_INV (const vector <T>& v, T x, int ini, int fin){
 		return BusquedaBinaria_INV(v, x, medio + 1 , fin);
 }
 
-#endif 
+template <typename T>
 
+int QuickSort (const vector <T>& v, int ini, int fin){
+       if (ini < fin){
+		int pivot = Partition(v, ini, fin);
+ 		QuickSort(V, ini, pivot -1)
+		QuickSort(V, pivot +1, fin)
+}
+
+template <typename T>
+int Partition(const vector <T>& v, int ini, int fin){
+	T x = v[fin];
+	int i = ini;
+
+	for(int j = ini; j < fin; j++){
+		if (v[j] <= x){
+			swap (v[i], v[j];
+			i++;
+		}
+	}
+	swap(v[i], v[fin]);
+	return i;
+}
+#endif 
 
