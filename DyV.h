@@ -15,7 +15,7 @@ int BusquedaBinaria (const vector <T>& v, T x, int ini, int fin){
 	if (v[medio] == x)
 		return medio;
 	else if (v[medio] > x)
-		return BusquedaBinaria(v, x, ini, medio -1)
+		return BusquedaBinaria(v, x, ini, medio -1);
 	else 
 		return BusquedaBinaria(v, x, medio + 1, fin);
 }
